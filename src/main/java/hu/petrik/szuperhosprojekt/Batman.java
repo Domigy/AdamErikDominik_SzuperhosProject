@@ -16,12 +16,11 @@ public class Batman implements Szuperhos, Milliardos{
 
     @Override
     public boolean legyoziE(Szuperhos szuperhos) {
-        if (szuperhos.mekkoraAzEreje()>this.lelemenyesseg){
+        if (szuperhos.mekkoraAzEreje()<this.lelemenyesseg){
             return true;
         }
-        else {
-            return false;
-        }
+        return false;
+
     }
 
     @Override
@@ -31,6 +30,6 @@ public class Batman implements Szuperhos, Milliardos{
 
     @Override
     public String toString() {
-        return MessageFormat.format("Batman: leleményesség: {0}\n", this.lelemenyesseg);
+        return MessageFormat.format("Batman: leleményesség: {0}", this.lelemenyesseg);
     }
 }

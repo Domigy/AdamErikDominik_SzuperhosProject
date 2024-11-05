@@ -24,6 +24,6 @@ public class Vasember extends Bosszuallo implements Milliardos{
 
     @Override
     public String toString() {
-        return MessageFormat.format("Vasember: {0}", super.toString());
+        return MessageFormat.format("Vasember: {0}", String.valueOf(super.toString()));
     }
 }
